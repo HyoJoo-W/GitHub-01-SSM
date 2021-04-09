@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gitee-03-ssm-Backend:war">
+    <output-path>$PROJECT_DIR$/gitee-03-ssm-Backend/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>gitee-03-ssm-Backend</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="gitee-03-ssm-Backend-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="gitee-03-ssm-Backend:war exploded" />
+    </root>
+  </artifact>
+</component>
