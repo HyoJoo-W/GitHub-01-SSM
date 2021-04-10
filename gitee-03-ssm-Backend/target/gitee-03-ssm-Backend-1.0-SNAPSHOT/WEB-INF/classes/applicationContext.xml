@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="userDao" class="com.nut.dao.impl.UserDaoImpl"/>
+    <bean id="userService" class="com.nut.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+<!--    <bean id="user" class="com.nut.entity.User">-->
+<!--        <property name="name" value="tom"/>-->
+<!--        <property name="age" value="15"/>-->
+<!--    </bean>-->
+<!--    <bean id="user2" class="com.nut.entity.User">-->
+<!--        <property name="name" value="Amy" />-->
+<!--        <property name="age" value="12"/>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash;注入Map类型的属性值&ndash;&gt;-->
+<!--    <bean id="userDao" class="com.nut.dao.impl.UserDaoImpl">-->
+<!--        <property name="userMap">-->
+<!--            <map>-->
+<!--                <entry key="u1" value-ref="user"/>-->
+<!--                <entry key="u2" value-ref="user2"/>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--    </bean>-->
+    <!--有参构造函数注入属性-->
+    <!--<bean id="userService" class="com.nut.service.impl.UserServiceImpl">-->
+    <!--    <constructor-arg name="userDao" ref="userDao"/>-->
+    <!--</bean>-->
+
+    <!--Spring容器加载配置文件: 命名空间、约束-->
+    <context:property-placeholder location="classpath:druid.properties"/>
+    <!--Spring 配置 Druid数据连接池-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="driverClassName" value="${jdbc.driver}"/>
+    </bean>
+
+    <!--开启注解扫描-->
+    <context:component-scan base-package="com.nut"/>
+</beans>
