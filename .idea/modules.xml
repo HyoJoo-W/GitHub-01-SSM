@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gitee-03-ssm-Backend/gitee-03-ssm-Backend.iml" filepath="$PROJECT_DIR$/gitee-03-ssm-Backend/gitee-03-ssm-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gitee-03-ssm-JavaWeb/gitee-03-ssm-JavaWeb.iml" filepath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/gitee-03-ssm-JavaWeb.iml" />
     </modules>
   </component>
 </project>

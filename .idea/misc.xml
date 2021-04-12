@@ -3,12 +3,15 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/BackendModule" />
     <file type="web" url="file://$PROJECT_DIR$/gitee-03-ssm-Backend" />
+    <file type="web" url="file://$PROJECT_DIR$/gitee-03-ssm-JavaWeb" />
+    <file type="web" url="file://$PROJECT_DIR$/untitled" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/BackendModule/pom.xml" />
         <option value="$PROJECT_DIR$/gitee-03-ssm-Backend/pom.xml" />
+        <option value="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/pom.xml" />
       </list>
     </option>
   </component>

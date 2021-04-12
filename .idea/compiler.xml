@@ -2,16 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gitee-03-ssm-Backend" />
+        <module name="gitee-03-ssm-JavaWeb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="backendModule" target="15" />
       <module name="gitee-03-ssm-Backend" target="11" />
+      <module name="gitee-03-ssm-JavaWeb" target="11" />
+      <module name="untitled" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
