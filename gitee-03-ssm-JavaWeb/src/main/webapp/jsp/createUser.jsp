@@ -8,38 +8,64 @@
 <html>
 <head>
     <title>Create!</title>
-
+    <!--在线引入bootstrap -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form action="${pageContext.request.contextPath}/createUserServlet" method="get">
-        <div class="div-name">
-            <label for="userName">姓名：</label>
-            <input type="text" id="userName" name="name">
-        </div>
 
-        <div class="div-gender">
-            <span>性别：</span>
-            <input type="radio" name="gender" value="male" id="userGenderMale" checked>
-            <label for="userGenderMale">男</label>
+    <div class="container">
+        <form class="form-horizontal" action="${pageContext.request.contextPath}/createUserServlet" method="post">
+            <div class="form-group">
+                <div class="col-sm-6 col-sm-offset-2">
+                    <h2>用户开户</h2>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">用户名</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="用户名">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">性别</label>
+                <div class=" col-sm-6">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" value="male" checked> 男
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> 女
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date" class="col-sm-2 control-label">生日</label>
+                <div class=" col-sm-6">
+                    <input type="date" id="date" name="date">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="money" class="col-sm-2 control-label">余额</label>
+                <div class=" col-sm-6">
+                    <input type="number" id="money" name="money">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">创建</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
-            <input type="radio" name="gender" value="female" id="userGenderFemale">
-            <label for="userGenderFemale">女</label>
-        </div>
-
-        <div class="div-password">
-            <label for="userPassword">密码:</label>
-            <input type="text" name="password" id="userPassword">
-        </div>
-
-        <div class="div-confirm">
-            <label for="confirmPassword">确认密码:</label>
-            <input type="text" name="confirmPassword" id="confirmPassword">
-        </div>
-
-        <span class="span-msg">${requestScope.login_msg}</span>
-        <div class="div-btn">
-            <input type="submit" value="确定">
-        </div>
-    </form>
 </body>
 </html>

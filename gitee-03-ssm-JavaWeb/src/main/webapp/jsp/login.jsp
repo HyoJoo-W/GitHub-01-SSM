@@ -14,18 +14,44 @@
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div>
-        <form action="${pageContext.request.contextPath}/loginServlet" method="post">
-            <label for="name">用户名：</label>
-            <input type="text" name="name" id="name" value="${requestScope.original.getName()}"><br>
-            <label for="password">密码：</label>
-            <input type="text" name="password" id="password" value="${requestScope.original.getPassword()}"><br>
-            <input type="submit" value="提交">
+
+    <div class="container">
+        <form class="form-horizontal" action="${pageContext.request.contextPath}/loginServlet" method="post">
+            <div class="form-group">
+                <span class="col-sm-offset-4 col-sm-4">
+                    <h2>管理员登录</h2>
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-4 control-label">账户名</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" name="name" value="${requestScope.original.getName()}" placeholder="请输入管理员账户名...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-4 control-label">密码</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password" name="password" value="${requestScope.original.getPassword()}" placeholder="请输入密码...">
+                </div>
+            </div>
+            <div class="form-group">
+                <span class="col-sm-offset-5" style="color: red">${requestScope.err_msg}</span>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 记住我
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-10">
+                    <button type="submit" class="btn btn-default">登录</button>
+                </div>
+            </div>
         </form>
-    </div>
-    <span style="color: red">${requestScope.err_msg}</span>
-    <div>
-        <a href="#">成为管理员？</a>
     </div>
 </body>
 </html>

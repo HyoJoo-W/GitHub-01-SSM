@@ -10,11 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0f9db7b-e6f9-4e5e-948a-c42c624c2431" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe22783e-ac7c-43a7-a48b-f1eee15fce0d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe22783e-ac7c-43a7-a48b-f1eee15fce0d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/web/CreateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/web/CreateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/web/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/web/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/java/com/nut/web/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/createUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/createUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/mainMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/mainMenu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/queryUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/queryUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/updateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/gitee-03-ssm-JavaWeb/src/main/webapp/jsp/updateUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +104,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="D:\Node.js\node_modules\npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.37816092" />
     <property name="settings.editor.selected.configurable" value="spring" />
@@ -121,17 +135,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 8.5.64" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.64" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -315,7 +318,8 @@
       <workItem from="1618153799558" duration="85000" />
       <workItem from="1618192214304" duration="20487000" />
       <workItem from="1618224438459" duration="1816000" />
-      <workItem from="1618228064481" duration="1966000" />
+      <workItem from="1618228064481" duration="5476000" />
+      <workItem from="1618280315796" duration="12115000" />
     </task>
     <servers />
   </component>

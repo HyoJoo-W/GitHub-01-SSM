@@ -37,6 +37,7 @@ public class LoginServlet extends HttpServlet
 
         //封装Administrator，调用后台
         Administrator loginAdministrator =new Administrator();
+
         try
         {
             BeanUtils.populate(loginAdministrator,parameterMap);

@@ -43,6 +43,8 @@ public class UpdateUserServlet extends HttpServlet
             e.printStackTrace();
         }
 
+        System.out.println("user = " + user);
+
         //调用service层
         UserService userService = new UserServiceImpl();
         userService.updateUser(user);

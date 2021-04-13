@@ -10,6 +10,9 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -32,22 +35,22 @@ public class CreateUserServlet extends HttpServlet
         request.setCharacterEncoding("utf-8");
 
         //2.获取JSP请求的数据
-        Map<String, String[]> parameterMap = request.getParameterMap();
+        String name = request.getParameter("name");
+        String password = request.getParameter("password");
+        String gender = request.getParameter("gender");
+        String date = request.getParameter("date");
+        float money = Float.parseFloat(request.getParameter("money"));
 
         //3.封装User并调用service层处理
         User user = new User();
-        try
-        {
-            BeanUtils.populate(user,parameterMap);
-        }
-        catch (IllegalAccessException | InvocationTargetException e)
-        {
-            e.printStackTrace();
-        }
+        user.setName(name);
+        user.setPassword(password);
+        user.setGender(gender);
+        user.setDate(date);
+        user.setMoney(money);
 
         UserService userService = new UserServiceImpl();
         User newUser = userService.addUser(user);
-
 
         //4.操作成功与否验证
         if(newUser != null)

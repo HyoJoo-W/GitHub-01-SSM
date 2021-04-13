@@ -22,13 +22,15 @@ public class UserDaoImpl implements UserDao
     @Override
     public User addUser(User user)
     {
-        String sql = "insert into user(name,password,gender) values(?,?,?)";
+        String sql = "insert into user(name,password,gender,date,money) values(?,?,?,?,?)";
         try
         {
             int effectedLines = jdbcTemplate.update(sql,
                     user.getName(),
                     user.getPassword(),
-                    user.getGender());
+                    user.getGender(),
+                    user.getDate(),
+                    user.getMoney());
             return effectedLines > 0 ? user : null;
         }
         catch (DataAccessException e)
@@ -60,8 +62,12 @@ public class UserDaoImpl implements UserDao
     @Override
     public void updateUser(User user)
     {
-        String sql = "update user set gender = ? where name = ?";
-        jdbcTemplate.update(sql,user.getGender(),user.getName());
+        String sql = "update user set password= ? , gender = ? ,date = ? where name = ?";
+        jdbcTemplate.update(sql,
+                user.getPassword(),
+                user.getGender(),
+                user.getDate(),
+                user.getName());
     }
 
     //根据name删除User

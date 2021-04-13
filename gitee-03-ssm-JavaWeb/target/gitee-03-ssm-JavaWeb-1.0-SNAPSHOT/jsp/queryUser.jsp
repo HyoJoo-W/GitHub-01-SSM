@@ -24,30 +24,35 @@
     </script>
 </head>
 <body>
-    <div class="table-responsive">
-        <table class="table">
-            <tr>
-                <th>编号</th>
-                <th>用户名</th>
-                <th>用户性别</th>
-                <th>开户日期</th>
-                <th>用户存款</th>
-                <th>操作</th>
-            </tr>
-            <c:forEach items = "${requestScope.userList}" var = "user" varStatus = "s">
+    <div class="container">
+        <div class="text-center">
+            <h2>用户查询</h2>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
                 <tr>
-                    <td>${s.count}</td>
-                    <td>${user.name}</td>
-                    <td>${user.gender}</td>
-                    <td>${user.date}</td>
-                    <td>${user.money}</td>
-                    <td>
-                        <a href="${pageContext.request.contextPath}/queryUserByNameServlet?name=${user.name}">修改</a> &nbsp;
-                        <a href="javascript:deleteUser('${user.name}')">删除</a>
-                    </td>
+                    <th>编号</th>
+                    <th>用户名</th>
+                    <th>用户性别</th>
+                    <th>生日</th>
+                    <th>用户存款</th>
+                    <th>操作</th>
                 </tr>
-            </c:forEach>
-        </table>
+                <c:forEach items = "${requestScope.userList}" var = "user" varStatus = "s">
+                    <tr>
+                        <td>${s.count}</td>
+                        <td>${user.name}</td>
+                        <td>${user.gender}</td>
+                        <td>${user.date}</td>
+                        <td>${user.money}</td>
+                        <td>
+                            <a href="${pageContext.request.contextPath}/queryUserByNameServlet?name=${user.name}">修改</a> &nbsp;
+                            <a href="javascript:deleteUser('${user.name}')">删除</a>
+                        </td>
+                    </tr>
+                </c:forEach>
+            </table>
+        </div>
     </div>
 
 </body>
